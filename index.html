@@ -158,6 +158,20 @@
       background: rgba(37, 99, 235, 0.05);
     }
 
+    .project-name {
+      font-weight: 500;
+    }
+
+    .project-name:hover {
+      font-weight: 700;
+    }
+
+    .link--brix::after {
+      content: "↗";
+      margin-left: 4px;
+      font-size: 0.85em;
+    }
+
     .stats{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -327,28 +341,24 @@
 
         <div class="meta" aria-label="빠른 정보">
           <span class="chip">Backend Developer</span>
-          <a class="link" href="mailto:myki011122@gmail.com" aria-label="이메일">myki011122@gmail.com</a>
           <a class="link" href="https://github.com/jaksfj" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
           <a class="link" href="https://velog.io/@jaksfj/posts" target="_blank" rel="noopener noreferrer" aria-label="Velog">Velog</a>
+          <a class="link link--brix" href="https://github.com/SUGAI-BRIX/25_HC122" target="_blank" rel="noopener noreferrer" aria-label="BRIX 프로젝트 GitHub">
+            BRIX
+          </a>
         </div>
       </section>
 
       <section class="section" id="introduce">
         <h2 class="h2">INTRODUCE</h2>
         <p class="p">
-          백엔드 개발자를 목표로 다양한 프로젝트와 협업 경험을 쌓아왔습니다. Java와 Spring Boot를 기반으로 웹 서비스 개발을 진행하며 MySQL, Redis, AWS(EC2, S3, RDS) 등을 활용해 서버와 데이터 처리 구조를 직접 구현해왔고, JavaScript와 HTTP 기반 통신을 통해 프론트엔드와 연동되는 서비스 흐름을 이해하고자 노력해왔습니다.
-        </p>
-        <br>
-        <p class="p">
-          학부 과정에서는 컴퓨터공학 전공 동아리에서 알고리즘 스터디에 참여하며 문제 해결 능력을 꾸준히 키워왔고, 팀 프로젝트를 통해 협업 경험을 쌓았습니다. 한이음 공모전과 전공 랩실 프로젝트에 참여하며 다양한 역할의 팀원들과 함께 서비스를 개발했고, 이를 통해 단순한 기능 구현을 넘어 협업과 소통의 중요성을 깊이 이해하게 되었습니다.
-        </p>
-        <br>
-        <p class="p">
-          특히 프로젝트를 진행하며 단순한 기능 구현을 넘어 사용자 요청이 시스템에 미치는 영향을 고려하는 개발을 지향하게 되었습니다. 서버 부하를 줄이기 위한 데이터 처리 방식과 API 구조를 고민하고, AI 모델과 서버를 연동하는 과정에서도 전체 시스템 흐름을 고려해 구조를 설계하며 서비스 관점에서 문제를 해결하고자 노력해왔습니다.
-        </p>
-        <br>
-        <p class="p">
-          앞으로는 백엔드 개발자로서 기술적인 성장뿐만 아니라, 서비스 구조를 이해하고 문제를 구조적으로 해결할 수 있는 개발자가 되고자 합니다. 팀과 함께 협업하며 더 나은 서비스를 만들어가는 과정 속에서 지속적으로 학습하고, 실제 서비스 환경에서 가치를 만들어낼 수 있는 개발자로 성장해 나가고자 합니다.
+          Java와 Spring Boot를 기반으로 웹 서비스를 개발하며 MySQL, Redis, AWS를 활용해
+          서버와 데이터 처리 구조를 설계하고 구현해 왔습니다. 또한 REST API와 HTTP 기반 통신을 통해
+          서비스 전반의 데이터 흐름을 설계하고, 캐싱 전략과 API 구조 개선을 통해 성능을 최적화하는 경험을 쌓았습니다.
+          AI 모델과 서버를 연동하는 과정에서 전체 시스템 흐름을 고려한 구조를 설계하며,
+          단순 구현을 넘어 서비스 관점에서 문제를 해결하고자 노력해 왔습니다.
+          앞으로는 서비스 구조를 깊이 이해하고 협업을 통해 더 나은 시스템을 만들어가는
+          백엔드 개발자로 성장하고자 합니다.
         </p>
       </section>
 
@@ -356,13 +366,11 @@
         <h2 class="h2">PROJECT EXPERIENCE</h2>
         <ul class="list">
           <li>
-            <strong>2025.03 ~ 2025.10</strong> — Brix (AI 기반 과일 당도 예측 및 거래 플랫폼)<br/>
-            - 과일 이미지를 기반으로 당도를 예측하고 등급을 분류하는 서비스<br/>
+            <strong>2025.03 ~ 2025.10</strong> — Brix (AI 기반 과일 당도 예측 및 거래 플랫폼) - 한이음 공모전 동상 수상<br/>
           </li>
         
           <li>
             <strong>2024.06 ~ 2024.12</strong> — TripMate (여행 일정 생성 서비스)<br/>
-            - 사용자 선택 기반으로 여행 일정을 생성하고 관리하는 서비스<br/>
           </li>
         </ul>
       </section>
@@ -371,7 +379,10 @@
         <h2 class="h2">PROJECT DETAILS</h2>
         <ul class="list">
           <li>
-            <strong>Brix</strong> — AI 기반 과일 당도 예측 및 거래 플랫폼  
+            <a class="link--brix project-name" href="https://github.com/SUGAI-BRIX/25_HC122" target="_blank" rel="noopener noreferrer">
+              BRIX
+            </a>
+             — AI 기반 과일 당도 예측 및 거래 플랫폼  
             <span class="role">Backend Developer</span>
         
             <ul>
@@ -381,13 +392,24 @@
               </li>
         
               <li>
-                <strong>Performance & Architecture</strong> — Redis 캐싱으로 인기 상품 조회 성능 개선, 
-                스케줄링 기반 자동 갱신 및 AI 추론 파이프라인 분리로 예측 안정성 향상
+                <strong>Performance & Architecture</strong>
+                <ul>
+                  <li>
+                    - Redis 캐싱 도입으로 인기 상품 조회 성능 개선 (300ms → 50ms, 약 83% 개선)
+                  </li>
+                  <li>
+                    - Jetson Nano 환경에서 객체 탐지와 CNN 추론 동시 수행으로 발생한 OOM 및 지연 문제를 해결하기 위해
+                    AI 추론 서버를 EC2로 분리하고 역할 분리 구조(Jetson: 탐지 / EC2: 추론)를 적용 →
+                    추론 지연 감소 및 시스템 안정성 향상
+                  </li>
+                </ul>
               </li>
         
               <li>
-                <strong>System Design</strong> — 공통 응답 포맷 및 전역 예외 처리 도입, 
-                과일 시세 기반 가격 계산 API 설계, Jetson 데이터 누적 구조 구축
+                <strong>System Design</strong>
+                - 공통 응답 포맷 및 전역 예외 처리 구조 설계로 API 일관성 확보 <br>
+                - 과일 시세(KAMIS API) 기반 가격 계산 로직 구현 <br>
+                - Jetson → 서버 → DB로 이어지는 데이터 파이프라인 설계
               </li>
             </ul>
           </li>
@@ -395,22 +417,27 @@
 
         <ul class="list">
           <li>
-            <strong>TripMate</strong> — 여행 일정 생성 및 관리 서비스  
+            <a class="link--brix project-name" target="_blank" rel="noopener noreferrer">
+                TripMate
+            </a>
+             — 여행 일정 생성 및 관리 서비스
             <span class="role">Backend Developer</span>
         
             <ul>
               <li>
-                Spring Boot 기반 여행 일정 관리 서비스 개발, 
-                user / schedule / review 등 도메인 단위 패키지 구조 설계로 유지보수성과 확장성 확보
+                Spring Boot 기반 여행 일정 관리 서비스 개발 <br>
+                - user / schedule / review 등 도메인 단위 패키지 구조 설계로 유지보수성과 확장성 확보
               </li>
         
               <li>
-                <strong>Architecture</strong> — Controller / Service / Repository 계층 분리 및 
-                Spring Security 기반 세션 인증 구조 구현
+                <strong>Architecture</strong> <br>
+                 - Controller / Service / Repository 계층 분리 <br>
+                 - Spring Security 기반 세션 인증 구조 구현
               </li>
               <li>
-                <strong>System Design</strong> — Thymeleaf 기반 SSR과 API 컨트롤러 분리를 통해 
-                페이지 렌더링과 비동기 데이터 처리를 동시에 지원하는 구조 설계
+                <strong>System Design</strong><br>
+                - Thymeleaf 기반 SSR 구조 적용으로 서버에서 페이지 렌더링과 데이터 처리 통합<br>
+                - API 컨트롤러 분리를 통해 비동기 데이터 처리 구조 설계
               </li>
             </ul>
           </li>
@@ -419,11 +446,29 @@
 
       <section class="section" id="skills">
         <h2 class="h2">SKILLS</h2>
-        <p class="p">아래는 예시입니다. 실제 사용하는 것만 남기면 더 고급스럽게 보입니다.</p>
+      
         <ul class="list">
-          <li><strong>Languages</strong>: Java (Primary), Python (Basic)</li>
-          <li><strong>Frameworks</strong>: Spring Boot</li>
-          <li><strong>Infra & DB</strong>: MySQL, Redis, AWS (EC2, S3), Docker</li>
+          <li>
+            <strong>Languages</strong><br>
+            Java (Primary), Python (Basic)
+          </li>
+      
+          <li>
+            <strong>Backend</strong><br>
+            - Spring Boot, JPA 기반 REST API 설계 및 개발<br>
+            - JWT / 세션 기반 인증 구현 경험
+          </li>
+      
+          <li>
+            <strong>Infra & DB</strong><br>
+            - AWS EC2, S3, RDS 기반 서비스 배포 경험<br>
+            - Redis 캐싱을 활용한 성능 개선 경험
+          </li>
+      
+          <li>
+            <strong>DevOps</strong><br>
+            - Docker 기반 개발 및 실행 환경 구성
+          </li>
         </ul>
       </section>
 
@@ -442,11 +487,11 @@
             <strong>학부 랩실 프로젝트 (TripMate)</strong>  
             <span class="role">Backend Developer</span>
             <br />
-            여행 일정 생성 서비스 개발, 도메인 설계 및 서버-프론트 연동 경험을 통해 서비스 흐름 이해
+            여행 일정 생성 서비스 개발, 도메인 설계 및 SSR 기반 웹 서비스 구현 경험
           </li>
       
           <li>
-            <strong>알고리즘 스터디 (컴퓨터공학 힉부 동아리)</strong>  
+            <strong>알고리즘 스터디 (컴퓨터힉부 동아리)</strong>  
             <br />
             문제 해결 능력 향상을 위해 꾸준히 알고리즘 문제 풀이 및 코드 리뷰 진행
           </li>
@@ -457,7 +502,7 @@
       <section class="section" id="certificates">
         <h2 class="h2">CERTIFICATES</h2>
         <ul class="list">
-          <li>정보처리기능사 (2025)</li>
+          <li>정보처리기사 (2025)</li>
         </ul>
       </section>
 
