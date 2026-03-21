@@ -13,7 +13,7 @@
       background: #ffffff;
       color: #0f172a;
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      line-height: 1.65;
+      line-height: 1.72;
       letter-spacing: -0.01em;
     }
 
@@ -223,6 +223,7 @@
       margin: 0;
       color: var(--muted);
       font-size: 15px;
+      line-height: 1.85;
     }
 
     .note{
@@ -236,14 +237,15 @@
     }
 
     .list{
-      margin: 10px 0 0;
+      margin: 12px 0 0;
       padding-left: 18px;
       color: var(--muted);
       font-size: 15px;
+      line-height: 1.78;
     }
 
     .list li{
-      margin: 6px 0;
+      margin: 9px 0;
     }
 
     .divider{
@@ -346,6 +348,9 @@
           <a class="link link--brix" href="https://github.com/SUGAI-BRIX/25_HC122" target="_blank" rel="noopener noreferrer" aria-label="BRIX 프로젝트 GitHub">
             BRIX
           </a>
+          <a class="link link--brix" href="https://github.com/jaksfj/tripmate_backend" target="_blank" rel="noopener noreferrer" aria-label="TripMate 프로젝트 GitHub">
+            TripMate
+          </a>
         </div>
       </section>
 
@@ -392,17 +397,11 @@
               </li>
         
               <li>
-                <strong>Performance & Architecture</strong>
-                <ul>
-                  <li>
-                    - Redis 캐싱 도입으로 인기 상품 조회 성능 개선 (300ms → 50ms, 약 83% 개선)
-                  </li>
-                  <li>
-                    - Jetson Nano 환경에서 객체 탐지와 CNN 추론 동시 수행으로 발생한 OOM 및 지연 문제를 해결하기 위해
+                <strong>Performance & Architecture</strong><br>
+                  - Redis 캐싱 도입으로 인기 상품 조회 성능 개선 (300ms → 50ms, 약 83% 개선)<br>
+                  - Jetson Nano 환경에서 객체 탐지와 CNN 추론 동시 수행으로 발생한 OOM 및 지연 문제를 해결하기 위해
                     AI 추론 서버를 EC2로 분리하고 역할 분리 구조(Jetson: 탐지 / EC2: 추론)를 적용 →
                     추론 지연 감소 및 시스템 안정성 향상
-                  </li>
-                </ul>
               </li>
         
               <li>
@@ -417,7 +416,7 @@
 
         <ul class="list">
           <li>
-            <a class="link--brix project-name" target="_blank" rel="noopener noreferrer">
+            <a class="link--brix project-name" href="https://github.com/jaksfj/tripmate_backend" target="_blank" rel="noopener noreferrer">
                 TripMate
             </a>
              — 여행 일정 생성 및 관리 서비스
@@ -432,12 +431,13 @@
               <li>
                 <strong>Architecture</strong> <br>
                  - Controller / Service / Repository 계층 분리 <br>
-                 - Spring Security 기반 세션 인증 구조 구현
+                 - Spring Security 기반 세션 인증 및 OAuth2 로그인 연동
               </li>
               <li>
                 <strong>System Design</strong><br>
                 - Thymeleaf 기반 SSR 구조 적용으로 서버에서 페이지 렌더링과 데이터 처리 통합<br>
-                - API 컨트롤러 분리를 통해 비동기 데이터 처리 구조 설계
+                - API 컨트롤러 분리를 통해 비동기 데이터 처리 구조 설계 <br>
+                - 사용자 요청 → 서버 처리 → DB → 화면 렌더링까지 데이터 흐름 설계
               </li>
             </ul>
           </li>
@@ -455,7 +455,7 @@
       
           <li>
             <strong>Backend</strong><br>
-            - Spring Boot, JPA 기반 REST API 설계 및 개발<br>
+            - Spring Boot, JPA 기반 REST API 설계 및 데이터 흐름 구현<br>
             - JWT / 세션 기반 인증 구현 경험
           </li>
       
@@ -467,7 +467,7 @@
       
           <li>
             <strong>DevOps</strong><br>
-            - Docker 기반 개발 및 실행 환경 구성
+            - Docker를 활용한 Redis 캐시 서버 컨테이너 구성
           </li>
         </ul>
       </section>
@@ -523,7 +523,7 @@
       </section>
 
       <footer>
-        Latest Updated 2026. 03. 19
+        Latest Updated 2026. 03. 21
       </footer>
     </div>
   </main>
